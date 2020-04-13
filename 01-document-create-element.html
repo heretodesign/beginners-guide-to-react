@@ -1,10 +1,13 @@
 <body>
   <div id="root"></div>
-  <script type="text/javascript">
+  <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.9.5/babel.js"></script>
+  <script type="text/babel">
     const rootElement = document.getElementById('root')
-    const element = document.createElement('div')
-    element.textContent = 'Hello World'
-    element.className = 'container'
-    rootElement.appendChild(element)
+    const children = "HelloWabel"
+    const className = "container"
+    const element = <div id="app-root">{children}</div>
+    ReactDOM.render(element, rootElement)
   </script>
 </body>
